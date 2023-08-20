@@ -1,0 +1,12 @@
+@import './styles/buttons.scss';
+@import './styles/layout.scss';
+@import './styles/text.scss';
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: 'Roboto', sans-serif !important;
+  box-sizing: border-box
+};
