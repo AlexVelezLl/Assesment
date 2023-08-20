@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 
+// Desde aqui se va a importar environment.js e instanciar el sdk
 function App() {
   return (
     <div className="App">
