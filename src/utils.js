@@ -4,7 +4,7 @@ export const getNextYear = (date) => {
   }
   const dateObj = new Date(date);
   const nextYear = dateObj.getFullYear() + 1;
-  let nextYearDate = new Date(nextYear, dateObj.getMonth(), dateObj.getDate());
+  let nextYearDate = new Date(nextYear, dateObj.getMonth(), dateObj.getDate() + 1);
 
   const offset = nextYearDate.getTimezoneOffset();
   nextYearDate = new Date(nextYearDate.getTime() - (offset*60*1000));

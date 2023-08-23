@@ -1,6 +1,7 @@
 
 $primary-color: #FFDD00;
 $secondary-color: #E9ECF3;
+$surface-color: #FFFFFF;
 
 $on-primary-color: #0F265D;
 $on-secondary-color: #0F265D;
@@ -11,7 +12,8 @@ $focus-color: #1FB6FF;
 $border-color: #C7C7C7;
 $strong-color: #252525;
 $focus-shadow-color: #1FB6FF66;
-$placeholder-color: $on-surface-color 66;
+$placeholder-color: #4A4A5066;
+$hover-color: #4A4A5020;
 
 @import './styles/buttons.scss';
 @import './styles/layout.scss';

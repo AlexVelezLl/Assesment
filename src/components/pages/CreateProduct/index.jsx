@@ -33,12 +33,7 @@ const CreateProduct = () => {
       setErrors({ ...errors });
       return false;
     }
-    if (constraints.future) {
-      console.log("Aaaa", (
-        !product[field] ||
-        new Date(product[field]) < new Date(getToday())
-      ));
-    }
+
     if (
       constraints.future &&
       (
@@ -46,7 +41,6 @@ const CreateProduct = () => {
         new Date(product[field]) < new Date(getToday())
       )
     ) {
-      console.log("Me estoy metiendo aqui")
       errors[field] = message + ' Debe ingrear una fecha futura';
       setErrors({ ...errors });
       return false;
@@ -111,7 +105,6 @@ const CreateProduct = () => {
       handleReset(e);
       alert('Producto creado con éxito');
     } catch (error) {
-      console.log("Error on create product", error);
       alert('Error al crear el producto');
     } finally {
       setLoading(false);

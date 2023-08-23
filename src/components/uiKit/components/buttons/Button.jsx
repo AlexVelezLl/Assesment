@@ -6,6 +6,7 @@ const Button = (props) => {
 
   const button = (
     <button
+      disabled={disabled}
       className={`bp-btn ${ className || "" } ${
         disabled ? 'bp-disabled' : ''
       }`}
