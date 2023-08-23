@@ -1,0 +1,42 @@
+a {
+  color: $on-surface-color;
+  text-decoration: none;
+}
+
+.bp-btn {
+  border: none;
+  outline: none;
+  display: flex;
+  font-size: 16px;
+  cursor: pointer;
+  min-height: 50px;
+  position: relative;
+  width: fit-content;
+  padding-left: 16px;
+  padding-right: 16px;
+  align-items: center;
+  min-width: fit-content;
+  box-sizing: border-box;
+  letter-spacing: normal;
+  justify-content: center;
+  background-color: transparent;
+  color: $on-surface-color;
+  text-decoration: none;
+  font-weight: 500;
+  border-radius: 4px;
+  font-family: inherit;
+  &.bp-disabled {
+    opacity: 0.5;
+    pointer-events: none;
+  }
+};
+
+.bp-btn-primary {
+  background-color: $primary-color;
+  color: $on-primary-color;
+};
+
+.bp-btn-secondary {
+  background-color: $secondary-color;
+  color: $on-secondary-color;
+};

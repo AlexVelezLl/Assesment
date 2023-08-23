@@ -1,14 +1,24 @@
 // root de todo, rutas, context.
 import React from 'react';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Header from './Header';
+import ViewProducts from './pages/ViewProducts';
+import CreateProduct from './pages/CreateProduct';
 
 import './uiKit/index.scss';
 
 const App = () => {
+
   return (
-    <div className='bp-p-1'>
+    <div className='bp-p-3'>
       <Header />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<ViewProducts />}/>
+          <Route path="/create" element={<CreateProduct />} />
+        </Routes>
+    </BrowserRouter>
     </div>
   );
 };

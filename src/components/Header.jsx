@@ -10,7 +10,7 @@ const Header = () => {
     >
       <img
         src={BPLogo} alt="BP Logo"
-        width="200rem"
+        width="180rem"
       />
     </header>
   );
