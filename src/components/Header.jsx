@@ -1,7 +1,5 @@
 import React from "react";
 
-import BPLogo from "../assets/BPLogo.svg";
-
 const Header = () => {
   return (
     <header
@@ -9,7 +7,8 @@ const Header = () => {
       role="banner"
     >
       <img
-        src={BPLogo} alt="BP Logo"
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Banco_Pichincha_nuevo.png/800px-Banco_Pichincha_nuevo.png"
+        alt="BP Logo"
         width="180rem"
       />
     </header>

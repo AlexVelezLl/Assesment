@@ -8,12 +8,12 @@ import CreateProduct from './pages/CreateProduct';
 
 import './uiKit/index.scss';
 
-const App = () => {
+const App = ({ basePath }) => {
 
   return (
     <div className='bp-p-3'>
       <Header />
-      <BrowserRouter>
+      <BrowserRouter basename={basePath}>
         <Routes>
           <Route path="/" element={<ViewProducts />}/>
           <Route path="/create" element={<CreateProduct />} />

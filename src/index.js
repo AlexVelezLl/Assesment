@@ -13,8 +13,10 @@ new Services(apiUrl, authorId);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
+const basePath = window.location.pathname;
+
 root.render(
   <React.StrictMode>
-    <App />
+    <App basePath={basePath}/>
   </React.StrictMode>
 );
